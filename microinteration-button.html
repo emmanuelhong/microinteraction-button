@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Emotional Button</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script> src="script.js"></script>
+	<script>
+		var chime = new Audio();
+		chime.src = "chime.mp3";
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<a href="#" onmousedown="chime.play()">
+			<div class="button"></div>
+			<!-- somehow works as a mouseup feature without neeeding to state mouseup -->
+		</a>
+	</div>
+</body>
+
+

@@ -1,0 +1,70 @@
+.container{
+	display: flex;
+    align-items:  center;
+    justify-content: center;
+	min-height: 100vh;
+}
+
+.button{
+	background-color: lightblue;
+	color:  gray;
+	display: inline-block;
+	width:  100px;
+	height:  100px;
+	line-height: 100px;
+	border-radius:  50%;
+  	font-weight: bold;
+  	cursor: pointer;
+  	text-align: center;
+  	text-decoration: none;
+  	position: relative;
+  	transition-duration:  0.9s;
+}
+
+.button:hover{
+  transition-duration: 0.132s;
+  background-color: lightsalmon;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .88s;
+  box-shadow: 0 0 10px 40px lightsalmon;
+}
+
+.button:active:after {
+  box-shadow: 0 0 0 0 lightsteelblue;
+  position: absolute;
+  border-radius: 6em;
+  left: 0;
+  top:0;
+  opacity: .6;
+  transition: 0s;
+}
+
+.button:active {
+  top: 3px;
+}
+/* visual to show that the user pressed down on the button */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
